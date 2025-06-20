@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+deepak aur tweet
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center  mt-4">welcome to deepak django project</h1>
+
+<h2>{% if form.instance.pk %}Edit Tweet {% else %} Create tweet {% endif %}</h2>
+
+{% endblock %}
