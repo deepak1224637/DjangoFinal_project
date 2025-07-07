@@ -5,6 +5,13 @@ deepak aur tweet
 {% endblock %}
 
 {% block content %}
-<h1 class="text-center  mt-4">welcome to deepak django project</h1>
+<h1 class="text-center  mt-4">Are you sure  that you want to delet the tweet ?</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <button class="btn btn-danger">Delete</button>
+    <a href="{% url 'tweet_list' %}
+    ">Cancel</a>
+</form>
 
 {% endblock %}
